@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class Tests {
 
     @BeforeAll
-    static void BeforeAll() {
+    static void beforeAll() {
         Configuration.holdBrowserOpen = false;
         Configuration.browserSize = "1920x1080";
     }
