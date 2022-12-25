@@ -20,7 +20,7 @@ public class Tests {
     }
 
     @Test
-    void testGit () {
+    void testGit() {
         open("https://github.com");
         $(".list-style-none").$(byText("Solutions")).hover();
         $(byText("Enterprise")).click();
@@ -28,10 +28,11 @@ public class Tests {
     }
 
     @Test
-    void testDrags () {
+    void testDrags() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(text("B"));
+        $("#column-b").shouldHave(text("A"));
     }
 }
 
